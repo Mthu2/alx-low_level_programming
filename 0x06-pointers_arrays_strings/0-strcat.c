@@ -1,11 +1,10 @@
 #include "main.h"
 /**
  * _strcat - function name
- * @seat: parameter one
+ * @dest: parameter one
  * @src: parameter two
  * Return: dest
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int destlen = 0;
@@ -19,7 +18,7 @@ char *_strcat(char *dest, char *src)
 
 	for (i = 0; i <= srclen; i++)
 	{
-		dest[deslen + i] = src [i];
+		dest[deslen + i] = src[i];
 	}
 	return (dest);
 }
