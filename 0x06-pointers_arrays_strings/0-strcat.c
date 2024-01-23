@@ -1,24 +1,30 @@
 #include "main.h"
+
 /**
- * _strcat - function name
- * @dest: parameter one
- * @src: parameter two
+ * strncat - concatenates two strings
+ * using n bytes from src
+ * @dest: input value
+ * @src: input value
+ * @n: input value
  * Return: dest
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src)
 {
-	int destlen = 0;
-	int srclen = 0;
-	int i;
+        int i;
+        int j;
 
-	for (i = o; dest[i] != '\0'; i++)
-		detlen++;
-	for (i = 0; src[i] != '\0'; i++)
-		srclen++;
-
-	for (i = 0; i <= srclen; i++)
-	{
-		dest[deslen + i] = src[i];
-	}
-	return (dest);
+        i = 0;
+        while (dest[i] != '\0')
+        {
+                i++;
+        }
+        j = 0;
+        while (src[j] != '\0')
+        {
+		dest[i] = src[j];
+		i++;
+		j++;
+        }
+        dest[i] = '\0';
+        return (dest);
 }
